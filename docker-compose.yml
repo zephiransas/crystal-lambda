@@ -1,0 +1,9 @@
+version: "3"
+services:
+  crystal:
+    build:
+      context: .
+    image: crystal-on-lambda
+    command: ./build.sh
+    volumes:
+      - .:/lambda

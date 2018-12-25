@@ -1,0 +1,6 @@
+#!/bin/sh
+ 
+set -euo pipefail
+ 
+EXEC="$LAMBDA_TASK_ROOT/$_HANDLER"
+$EXEC
